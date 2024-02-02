@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="Css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+
+  <title> Landing Page </title>
+
+</head>
+<body>
+
+
+  <header id="header">
+
+    <div id="normal-header">
+      <a href="#" id="image-link"><img src="Images/logonobg.png" alt="Notesshala Logo" id="header-img"/></a>
+
+      <nav id="nav-bar">
+        <ul>
+            <li class="nav-link" id="menu-item"><a href="#hero-header" class="menu-link"> Home </a></li>
+            <li class="nav-link" id="menu-item"><a href="#features-container" class="menu-link"> Links</a></li>
+            <li class="nav-link" id="menu-item"><a href="#presentation-container" class="menu-link"> Know More </a></li>
+            <li>
+                <form action="javascript:" class="search-bar">
+                    <input type="search" name="search" pattern=".*\S.*" required>
+                    <button class="search-btn" type="submit">
+                        <span>Search</span>
+                    </button>
+                </form>
+            </li>
+            <li><button class="login-button" href="#">Login</button></li>
+            <li><button class="join-button" href="#">Join</button></li>
+        </ul>
+    </nav>
+    
+    </div>
+
+
+    <div id="responsive-header">
+      <div id="responsive-logo-button">
+        <a href="#" id="image-link"><img src="Images/logonobg.png" alt="Notesshala Logo" id="header-img-black"/></a>
+        <button id="image-button-black"><img src="https://i.ibb.co/yfM3fdZ/dropdown-menu-black.png" alt="Dropdown Menu" id="dropdown-button-black" /></button>
+      </div>
+
+      <div id="responsive-nav-bar">
+        <ul>
+          <li class="nav-link" id="responsive-home-item"><a href="#hero-header" class="responsive-menu-link"> Home </a></li>
+          <li class="nav-link" id="responsive-features-item"><a href="#features-container" class="responsive-menu-link"> Links</a></li>
+          <li class="nav-link" id="responsive-products-item"><a href="#presentation-container" class="responsive-menu-link"> Products </a></li>
+          <li><button class="login-button" href="#">Login</button></li>
+          <li><button class="join-button" href="#">Join</button></li>
+          </ul>
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- Hero Image, text & button -->
+
+  <div id="hero-header">
+    <div id="hero-content">
+      <br>
+      <br>
+      <br>
+      <p id="hero-text"> "Welcome to Notesshala - Your Academic Oasis! 🚀
+
+        Notesshala is your go-to resource for classes 9th-12th, <br>offering concise yet comprehensive notes and resources.<br> Navigate your academic journey with ease using our collection of study materials. <br>
+        Whether it's acing exams or mastering subjects, Notesshala is here to empower you. Join our vibrant learning community, <br>where knowledge knows no limits. Welcome to Notesshala - Where Learning Meets Excellence!"
+       </p>
+      <div>
+        <br>
+        <br>
+      </div>
+      <div class="container py-5">
+        <div class="output" id="output">
+          <h1 class="cursor"></h1>
+          <p></p>
+        </div>
+      </div>
+
+      <a href="#features-container"><button id="hero-button"> Next Section </button></a>
+    </div>
+
+  </div>
+
+  <div id="main">
+
+    <!-- "Features Section" -->
+
+    <div id="features-container">
+
+      <!-- Features Section Description -->
+      <div id="features-description">
+        <h1>  Where <span id="red-text">Excellence Meets Learning</span> </h1>
+        <hr id="title-text-separator" />
+
+        <p> "Discover the ultimate academic companion with Notesshala, your one-stop web app for educational 
+          success. Dive into a wealth of meticulously curated study materials, designed to empower students in 
+          classes 9th to 12th. With user-friendly navigation and comprehensive resources, Notesshala ensures that 
+          learning becomes a seamless and enriching experience. Join our community of motivated learners and 
+          elevate your educational journey. Notesshala - Your path to excellence."  </p>
+      </div>
+
+
+      <!-- Features of the Services -->
+      <div id="service-features">
+
+        <div id="feature">
+          <img src="https://i.ibb.co/6D3GmDW/monitor.png" alt="Heart Icon" id="heart-icon" />
+
+          <h2 id="feature-title"> 9th Grade</h2>
+
+          <a href="test2.html"><button id="feature-button"> See more! </button></a>
+        </div>
+
+        <div id="feature">
+          <img src="https://i.ibb.co/LY0pq5X/web-programming.png" alt="Code Icon" id="code-icon" />
+
+          <h2 id="feature-title"> 10th Grade</h2>
+          <a href="test3.html"><button id="feature-button"> See more! </button></a>
+        </div>
+
+        <div id="feature">
+          <img src="https://i.ibb.co/vHjwX9N/smartphone-with-shield.png" alt="Shield on Phone Icon" id="phone-icon" />
+
+          <h2 id="feature-title"> 11th Grade</h2>
+
+          <a href="test4.html"><button id="feature-button"> See more! </button></a>
+        </div>
+
+        <div id="feature">
+          <img src="https://i.ibb.co/6D3GmDW/monitor.png" alt="Monitor Icon" id="monitor-icon" />
+
+          <h2 id="feature-title"> 12th Grade </h2>
+
+          <a href="test5.html"><button id="feature-button"> See more! </button></a>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /"Features Section" -->
+
+
+
+    <!-- Presentation Section -->
+
+    <div id="presentation-container">
+
+      <div id="presentation-title-description">
+        <h1> Unlocking success with<span id="red-text"> Noteshala</span> </h1>
+
+        <hr id="title-text-separator" />
+
+        <p> "Notesshala is your academic ally, offering a comprehensive repository of 
+          notes, textbooks, study materials, and essential links, all geared to elevate 
+          your learning experience. With a user-friendly interface, our platform ensures 
+          easy access to these invaluable resources, conveniently hosted on Google Drive.
+           Whether you're a student in 9th, 10th, 11th, or 12th grade, Notesshala provides 
+           the essential tools to excel in your studies. Say goodbye to academic stress
+            and hello to a brighter future with Notesshala, where knowledge is just a click away!" </p>
+      </div>
+
+      <div id="section-buttons">
+
+        <button class="product-button" id="first-product-button"> 9th Grade</button>
+
+        <button class="product-button" id="second-product-button"> 10th Grade </button>
+
+        <button class="product-button" id="third-product-button"> 11th Grade</button>
+
+        <button class="product-button" id="fourth-product-button"> 12th Grade </button>
+
+      </div>
+
+
+      <!-- Product Content Section -->
+      <div id="section-content-container">
+
+
+
+        <!-- Content Container 1 -->
+        <div id="product-container-one" class="product-content">
+
+          <div id="content-image-container">
+            <img src="https://i.ibb.co/WyWxQ3f/action-blur-close-up-735911.jpg" id="content-image" class="image1" />
+          </div>
+
+          <div id="content-title-text">
+            <h1> 9th Grade</h1>
+
+            <p id="centered-product-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+              <br /><br />
+            </p>
+
+            <div class="product-features-list" id="first-feature-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Content Container 2 -->
+        <div id="product-container-two" class="product-content">
+          <div id="content-image-container">
+            <img src="https://i.ibb.co/rp92fYB/blur-business-close-up-1029757.jpg" id="content-image" class="image2" />
+          </div>
+
+          <div id="content-title-text">
+            <h1> Product Nr.2 Title </h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+              <br /><br />
+            </p>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <button id="content-button"> Read More </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Content Container 3 -->
+        <div id="product-container-three" class="product-content">
+          <div id="content-image-container">
+            <img src="https://i.ibb.co/Yj4fGBN/adult-apple-device-business-839465.jpg" id="content-image" class="image3" />
+          </div>
+
+          <div id="content-title-text">
+            <h1> Product Nr.3 Title </h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+              <br /><br />
+            </p>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <button id="content-button"> Read More </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Content Container 4 -->
+        <div id="product-container-four" class="product-content">
+          <div id="content-image-container">
+            <img src="https://i.ibb.co/t3Lnfm6/arrows-blur-close-up-163130.jpg" id="content-image" class="image2" />
+          </div>
+
+          <div id="content-title-text">
+            <h1> Product Nr.4 Title </h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.
+              <br /><br />
+            </p>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <div class="product-features-list">
+
+              <div id="product-feature-image">
+                <img src="https://i.ibb.co/LzczvS3/correct.png" alt="check-sign" id="correct-icon" />
+              </div>
+
+              <div id="inside-features-title-text">
+                <h2> This is test title </h2>
+
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor,
+                incidintum ut labore et dolor magna aliqua. </p>
+              </div>
+
+            </div>
+
+            <button id="content-button"> Read More </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Media - Video Section
+
+    <div id="main-media-container">
+
+      <div id="media-title-description">
+        <h1> Media Section </h1>
+
+        <hr id="title-text-separator">
+
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+
+      <div id="media-video-text-container">
+        <div id="media-text">
+          <h2> CBSE videos </h2>
+
+          <p>
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            <br /><br />
+
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+            sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit,
+          </p>
+
+          <button type="button" id="media-button"> Read More </button>
+        </div>
+
+
+          <hr id="text-video-sperator" />
+
+
+        <div id="media-video">
+          <iframe id="video"  src="https://www.youtube.com/embed/r0CQYTOyiPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <width="560" height="315" -->
+        </div>
+      </div>
+
+    </div> 
+
+
+
+
+
+
+
+
+    <!-- Prices Section
+    <div id="prices-section-container">
+      <div id="prices-title-description">
+        <h1> Prices title </h1>
+
+        <hr id="title-text-separator" />
+
+        <p>
+          Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolor magna aliqua. Ut enim ad minim veniam, quis mostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+
+      <div id="all-prices-container">
+
+        <div id="price-container-one" class="price-container">
+
+          <h1> Starter Pack </h1>
+
+          <h2> $55 </h2>
+
+          <p> Monthly Payment </p>
+
+          <hr />
+
+          <ul>
+            <li> Access to 5 of our main tools </li>
+            <li> 24/7 access to our support team </li>
+            <li> Weekly access to service meetings </li>
+            <li> 15GB of Cloud Storage </li>
+            <li> Full access to our Documentation </li>
+          </ul>
+
+          <button type="button"> Purchase Now </button>
+
+        </div>
+
+
+
+
+
+
+        <div id="price-container-two" class="price-container">
+
+          <h1> Premium Pack </h1>
+
+          <h2> $85 </h2>
+
+          <p> Monthly Payment </p>
+
+          <hr />
+
+          <ul>
+            <li> Access to ALL of our main tools </li>
+            <li> 24/7 access to our support team </li>
+            <li> Daily access to service meetings </li>
+            <li> 55GB of Cloud Storage </li>
+            <li> Access to our statistics tool </li>
+          </ul>
+
+          <button type="button"> Purchase Now </button>
+
+        </div>
+
+
+
+
+
+
+        <div id="price-container-three" class="price-container">
+
+          <h1> Professional Pack </h1>
+
+          <h2> $120 </h2>
+
+          <p> Monthly Payment </p>
+
+          <hr />
+
+          <ul>
+            <li> Access to all tool and databases </li>
+            <li> Personal support assistant </li>
+            <li> Presentation tools and meetings </li>
+            <li> 155GB of Cloud Storage </li>
+            <li> Access to the internal stock market </li>
+          </ul>
+
+          <button type="button"> Purchase Now </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+ -->
+
+
+<!-- JavaScript/jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="jquery.js"></script>
+
+
+  </div>
+
+  <footer>
+    <p> &copy; 2023 Noteshala </p>
+  </footer>
+  <script>
+    $(document).ready(function(){
+
+$(window).on("scroll", function() {
+  if($(window).scrollTop() > 50) {
+      $("#header").addClass("active-header");
+      $(".menu-link").addClass("active-menu-links");
+      $("#header-img").attr("src", "Images/logonobg.png");
+  } else {
+      //remove the background property so it comes transparent again (defined in your css)
+     $("#header").removeClass("active-header");
+     $(".menu-link").removeClass("active-menu-links");
+     $("#header-img").attr("src", "Images/logonobg.png");
+  }
+});
+
+// Responsive menu
+$("#responsive-nav-bar").hide();
+
+$("#image-button-black").click(function(){
+  $("#responsive-nav-bar").slideToggle();
+});
+
+$("#responsive-home-item , #responsive-features-item , #responsive-products-item , #responsive-media-item , #responsive-pricing-item").click(function(){
+  $("#responsive-nav-bar").slideToggle(200);
+})
+
+
+
+
+
+// Default sections visibility
+$('.product-content').hide();
+$('#product-container-one').show();
+
+
+// Button variables
+var firstButton = $('#first-product-button');
+var secondButton = $('#second-product-button');
+var thirdButton = $('#third-product-button');
+var fourthButton = $('#fourth-product-button');
+var buttons = $('.product-button');
+
+
+
+// Product variables
+var firstProduct = $('#product-container-one');
+var secondProduct = $('#product-container-two');
+var thirdProduct = $('#product-container-three');
+var fourthProduct = $('#product-container-four');
+
+
+// Visibility variables
+var firstVisible = firstProduct.is(':visible');
+var secondVisible = secondProduct.is(':visible');
+var thirdVisible = thirdProduct.is(':visible');
+var fourthVisible = fourthProduct.is(':visible');
+
+
+// Visible and Hidden Sections .click function
+$(firstButton).click(function(){
+  $('.product-content').hide();
+  $(firstProduct).fadeIn(600);
+  buttons.removeClass('product-button-active');
+  firstButton.addClass('product-button-active');
+});
+
+$(secondButton).click(function(){
+  $('.product-content').hide();
+  $(secondProduct).fadeIn(600);
+  $(secondProduct).css('visibility', 'visible');
+  buttons.removeClass('product-button-active');
+  secondButton.addClass('product-button-active');
+});
+
+$(thirdButton).click(function(){
+  $('.product-content').hide();
+  $(thirdProduct).fadeIn(600);
+  buttons.removeClass('product-button-active');
+  thirdButton.addClass('product-button-active');
+});
+
+$(fourthButton).click(function(){
+  $('.product-content').hide();
+  $(fourthProduct).fadeIn(600);
+  buttons.removeClass('product-button-active');
+  fourthButton.addClass('product-button-active');
+});
+
+
+
+// First Button Styling hidden/visible
+if (firstVisible === true) {
+  firstButton.addClass('product-button-active');
+}
+
+});
+
+// values to keep track of the number of letters typed, which quote to use. etc. Don't change these values.
+var i = 0,
+    a = 0,
+    isBackspacing = false,
+    isParagraph = false;
+
+// Typerwrite text content. Use a pipe to indicate the start of the second line "|".  
+var textArray = [
+"What is the unit of measurement for electric current?|Ampere (A)",
+
+"How many protons are there in the nucleus of a carbon-12 atom?|6 protons",
+
+"What is the chemical formula for water?|H2O",
+
+"In physics, what does the acronym 'AC' typically stand for?|Alternating Current",
+
+"What is the process by which plants convert sunlight into chemical energy?|Photosynthesis",
+
+"What is the SI unit of pressure?|Pascal (Pa)",
+
+"What type of chemical bond involves the sharing of electrons between atoms?|Covalent Bond",
+
+"What is the chemical symbol for gold?|Au",
+
+"What is the phenomenon where light is bent as it passes from one medium to another?|Refraction",
+
+"What is the formula to calculate the speed of an object in physics?|Speed = Distance / Time",
+
+"What is the name of the chemical process that converts sugar into alcohol and carbon dioxide?|Fermentation",
+];
+
+// Speed (in milliseconds) of typing.
+var speedForward = 100, //Typing Speed
+    speedWait = 1000, // Wait between typing and backspacing
+    speedBetweenLines = 1000, //Wait between first and second lines
+    speedBackspace = 25; //Backspace Speed
+
+//Run the loop
+typeWriter("output", textArray);
+
+function typeWriter(id, ar) {
+  var element = $("#" + id),
+      aString = ar[a],
+      eHeader = element.children("h1"), //Header element
+      eParagraph = element.children("p"); //Subheader element
+  
+  // Determine if animation should be typing or backspacing
+  if (!isBackspacing) {
+    
+    // If full string hasn't yet been typed out, continue typing
+    if (i < aString.length) {
+      
+      // If character about to be typed is a pipe, switch to second line and continue.
+      if (aString.charAt(i) == "|") {
+        isParagraph = true;
+        eHeader.removeClass("cursor");
+        eParagraph.addClass("cursor");
+        i++;
+        setTimeout(function(){ typeWriter(id, ar); }, speedBetweenLines);
+        
+      // If character isn't a pipe, continue typing.
+      } else {
+        // Type header or subheader depending on whether pipe has been detected
+        if (!isParagraph) {
+          eHeader.text(eHeader.text() + aString.charAt(i));
+        } else {
+          eParagraph.text(eParagraph.text() + aString.charAt(i));
+        }
+        i++;
+        setTimeout(function(){ typeWriter(id, ar); }, speedForward);
+      }
+      
+    // If full string has been typed, switch to backspace mode.
+    } else if (i == aString.length) {
+      
+      isBackspacing = true;
+      setTimeout(function(){ typeWriter(id, ar); }, speedWait);
+      
+    }
+    
+  // If backspacing is enabled
+  } else {
+    
+    // If either the header or the paragraph still has text, continue backspacing
+    if (eHeader.text().length > 0 || eParagraph.text().length > 0) {
+      
+      // If paragraph still has text, continue erasing, otherwise switch to the header.
+      if (eParagraph.text().length > 0) {
+        eParagraph.text(eParagraph.text().substring(0, eParagraph.text().length - 1));
+      } else if (eHeader.text().length > 0) {
+        eParagraph.removeClass("cursor");
+        eHeader.addClass("cursor");
+        eHeader.text(eHeader.text().substring(0, eHeader.text().length - 1));
+      }
+      setTimeout(function(){ typeWriter(id, ar); }, speedBackspace);
+    
+    // If neither head or paragraph still has text, switch to next quote in array and start typing.
+    } else { 
+      
+      isBackspacing = false;
+      i = 0;
+      isParagraph = false;
+      a = (a + 1) % ar.length; //Moves to next position in array, always looping back to 0
+      setTimeout(function(){ typeWriter(id, ar); }, 50);
+      
+    }
+  }
+}
+  </script>
+</body>
+</html>

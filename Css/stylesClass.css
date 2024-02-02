@@ -1,0 +1,360 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131418;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Enable vertical scrolling for the entire page */
+}
+
+/* Styles for the navigation bar */
+nav {
+    height: 6rem;
+    width: 100%;
+    background-color: #131418;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+/* Styling for the logo */
+.logo {
+    padding: 1vh 1vw;
+    text-align: center;
+}
+
+.logo img {
+    height: 2cm;
+    width: 10cm;
+    padding-right: 18cm;
+}
+
+/* Styles for navigation links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0 0.7vw;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 0.7vw;
+    color: white;
+}
+
+.nav-links li a:hover {
+    color: #61DAFB;
+}
+
+/* Styles for login and join buttons */
+.login-button {
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    margin-left: 2vw;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    color: #131418;
+    background-color: #f2f5f7;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+.join-button {
+    color: #131418;
+    background-color: #61DAFB;
+    border: 1.5px solid #61DAFB;
+    border-radius: 2em;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.join-button:hover {
+    color: #f2f5f7;
+    background-color: transparent;
+    border: 1.5px solid #f2f5f7;
+    transition: all ease-in-out 350ms;
+}
+
+/* Hamburger icon styles */
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Styling for small screens */
+@media screen and (max-width: 800px) {
+    nav {
+        position: fixed;
+        z-index: 3;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+        transition: all 0.7s ease;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #131418;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .nav-links li:nth-child(4) {
+        transition: all 0.5s ease 0.7s;
+    }
+
+    .nav-links li:nth-child(5) {
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .nav-links li:nth-child(6) {
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+
+    .nav-links li:nth-child(7) {
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+}
+
+/* Animating Hamburger Icon on Click */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    transition: all 0.7s ease;
+    width: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Style for the three divs */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: #131418;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styling for the fixed transparent info box */
+.info-box {
+    position: absolute;
+    top: 300px; /* Adjust this value to position it below the nav bar */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px; /* Adjust the width as needed */
+    background-color: transparent; /* Transparent background */
+    border-radius: 20px; /* Adjust the radius for curved edges */
+    padding: 20px;
+    color: #fff; /* Text color */
+    z-index: 100; /* Ensure it's above other elements */
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Transparent border */
+}
+
+.info-content {
+    /* Adjust the max height as needed */
+    max-height: relative;
+}
+.info-content h2 {
+    font-size: 40px; /* Adjust the font size */
+    margin-bottom: 40px;
+}
+
+.info-content p {
+    font-size: 20px; /* Adjust the font size */
+}
+p {
+    margin-bottom: 20px; /* Adjust the value to increase or decrease spacing */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 800px) {
+    /* Adjustments for smaller screens, such as smartphones and tablets */
+
+    body {
+        font-size: 16px; /* Adjust the base font size for better readability */
+    }
+
+    /* Centered Transparent Box for Small Screens */
+    .center-box {
+        max-width: 100%; /* Adjust the maximum width to fit the viewport */
+        margin: 0 10px; /* Add some margin to the sides for small screens */
+        height: auto; /* Allow the height to adjust automatically */
+        padding-bottom: 20px; /* Add some padding to the bottom for spacing */
+    }
+
+    /* Additional adjustments for navigation on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: relative;
+        flex-direction: column;
+        background: rgba(19, 20, 24, 0.9); /* Adjust the background color and transparency */
+        clip-path: none; /* Remove the clip-path */
+        -webkit-clip-path: none; /* Remove the clip-path for WebKit */
+        pointer-events: all; /* Enable pointer events for navigation links */
+    }
+
+    .nav-links li {
+        opacity: 1; /* Ensure all navigation links are visible */
+    }
+}
+
+/* Styling for the Quick Links Section */
+.quick-links {
+    background-color: transparent; /* Make the background transparent */
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.quick-links h3 {
+    color: white;
+    font-size: 20px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display links in a row */
+    justify-content: space-between; /* Add space between the links */
+}
+
+.quick-links li {
+    /* Style each link like the box with curved borders */
+    background-color: rgba(19, 20, 24, 0.7); /* Background color and transparency */
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid white; /* Add a border to create curved edges */
+    transition: transform 0.2s; /* Add a transition for smooth hover effect */
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* Adjust the font size as needed */
+    transition: color 0.2s; /* Add a transition for text color change */
+}
+
+.quick-links li:hover {
+    transform: scale(1.05); /* Scale the button slightly on hover for a pop effect */
+}
+
+.quick-links a:hover {
+    color: #61DAFB; /* Change text color on hover for a pop effect */
+}
+
+/*2nd transparent box */
+
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px; /* Adjust the value to control the degree of rounding */
+}
+
+.top-right-box {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    border-radius: 20px;
+    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Add a border for separation */
+    text-align: center;
+}
+
+.top-right-box h2 {
+    margin-bottom: 10px;
+}
+
+.top-right-box a {
+    text-decoration: none; /* Remove underline by default */
+    color: #fff; /* Set link color */
+    transition: color 0.3s ease; /* Add a smooth color transition on hover */
+    display: inline-block; /* Make the links inline-block elements */
+    transform: scale(1); /* Initial scale */
+    margin-bottom: 4px;
+}
+
+/* Define the hover effect */
+.top-right-box a:hover {
+    color: #007bff; /* Change link color on hover (you can use your desired color) */
+    transform: scale(1.2); /* Magnify the text on hover */
+}
+
